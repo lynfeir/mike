@@ -398,43 +398,75 @@
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div data-animate>
-                        <form onsubmit="handleSubmit(event)" class="space-y-6">
-                            <div>
-                                <label class="block text-white font-medium mb-2">Full Name</label>
-                                <input type="text" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors" placeholder="John Doe">
-                            </div>
+                        <form
+  action="https://formspree.io/f/yourFormID"
+  method="POST"
+  class="space-y-6"
+>
+    <div>
+        <label class="block text-white font-medium mb-2">Full Name</label>
+        <input
+            type="text"
+            name="name"
+            required
+            class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors"
+            placeholder="John Doe"
+        >
+    </div>
 
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="block text-white font-medium mb-2">Email</label>
-                                    <input type="email" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors" placeholder="john@example.com">
-                                </div>
-                                <div>
-                                    <label class="block text-white font-medium mb-2">Phone</label>
-                                    <input type="tel" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors" placeholder="(555) 123-4567">
-                                </div>
-                            </div>
+    <div class="grid md:grid-cols-2 gap-6">
+        <div>
+            <label class="block text-white font-medium mb-2">Email</label>
+            <input
+                type="email"
+                name="email"
+                required
+                class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors"
+                placeholder="john@example.com"
+            >
+        </div>
+        <div>
+            <label class="block text-white font-medium mb-2">Phone</label>
+            <input
+                type="tel"
+                name="phone"
+                required
+                class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors"
+                placeholder="(555) 123-4567"
+            >
+        </div>
+    </div>
 
-                            <div>
-                                <label class="block text-white font-medium mb-2">Service Needed</label>
-                                <select required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors">
-                                    <option value="">Select a service...</option>
-                                    <option value="handyman">Handyman Services</option>
-                                    <option value="landscaping">Landscaping</option>
-                                    <option value="renovation">Home Renovation</option>
-                                    <option value="custom">Custom Project</option>
-                                </select>
-                            </div>
+    <div>
+        <label class="block text-white font-medium mb-2">Service Needed</label>
+        <select
+            name="service"
+            required
+            class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors"
+        >
+            <option value="">Select a service...</option>
+            <option value="handyman">Handyman Services</option>
+            <option value="landscaping">Landscaping</option>
+            <option value="renovation">Home Renovation</option>
+            <option value="custom">Custom Project</option>
+        </select>
+    </div>
 
-                            <div>
-                                <label class="block text-white font-medium mb-2">Project Details</label>
-                                <textarea required rows="5" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors resize-none" placeholder="Tell us about your project..."></textarea>
-                            </div>
+    <div>
+        <label class="block text-white font-medium mb-2">Project Details</label>
+        <textarea
+            name="details"
+            required
+            rows="5"
+            class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none transition-colors resize-none"
+            placeholder="Tell us about your project..."
+        ></textarea>
+    </div>
 
-                            <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-600 text-white py-4 rounded-lg font-medium text-lg hover:shadow-xl hover:shadow-amber-500/30 transition-all">
-                                Send Inquiry
-                            </button>
-                        </form>
+    <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-600 text-white py-4 rounded-lg font-medium text-lg hover:shadow-xl hover:shadow-amber-500/30 transition-all">
+        Send Inquiry
+    </button>
+</form>
                     </div>
 
                     <div class="space-y-8" data-animate>
@@ -544,7 +576,7 @@
                     </div>
                 </div>
                 <div class="text-slate-400 text-sm">
-                    © 2024 Abanifi & Barbosa Services. Crafted with excellence.
+                    © 2025 Abanifi & Barbosa Services. Crafted with excellence.
                 </div>
             </div>
         </div>
